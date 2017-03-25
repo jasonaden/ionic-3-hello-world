@@ -10,6 +10,7 @@
     "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
+    "@angular/animations": "4.0.0",
     "@angular/common": "4.0.0",
     "@angular/compiler": "4.0.0",
     "@angular/compiler-cli": "4.0.0",
@@ -22,12 +23,15 @@
     "@ionic/storage": "2.0.1",
     "ionic-angular": "2.2.0-201703171907",
     "ionicons": "3.0.0",
-    "rxjs": "5.0.1",
-    "sw-toolbox": "3.4.0",
-    "zone.js": "0.7.2"
+    "rxjs": "5.1.1",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.4"
   },
   "devDependencies": {
     "@ionic/app-scripts": "1.1.4",
+    "rollup": "^0.41.6",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
     "typescript": "2.2.1"
   },
   "cordovaPlugins": [
@@ -50,6 +54,7 @@
   "config": {
     "ionic_experimental_purge_decorators": true,
     "ionic_generate_source_map": true,
-    "ionic_aot_write_to_disk": true
+    "ionic_aot_write_to_disk": true,
+    "ionic_bundler": "rollup"
   }
 }
